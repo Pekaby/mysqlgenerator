@@ -1,0 +1,5 @@
+.container {
+    column-count: 3;
+    width: 88%;
+    margin: 0 auto;
+}

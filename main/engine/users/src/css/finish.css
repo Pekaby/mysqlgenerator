@@ -1,0 +1,57 @@
+body {
+    background: #f2f2f2;
+}
+main {
+    width: 82.5%;
+    margin: auto;
+}
+.btn {
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 23px;
+    border: 2px solid #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: italic;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+.btn:hover{
+    box-shadow: 0 0 10px  #4723e8;
+}
+.btn:active {
+    border: 2px solid rgb(65,0,102);
+}
+.b_f {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.input_form {
+    border-radius: 23px;
+    border: 2px solid #000;
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+.input_form:focus{
+    border: 2px solid rgb(65,0,102);
+    outline: none;
+}
+.warn {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+.image {
+    font-family: 'Roboto', sans-serif;
+    margin-top: 15px;
+}
+.wrapper {
+    margin-top: 15px;
+}

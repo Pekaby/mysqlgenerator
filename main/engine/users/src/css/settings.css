@@ -1,0 +1,276 @@
+body{
+    background: #f2f2f2;
+}
+main{
+    max-width: 83%;
+    margin: auto;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+.main_wrapper{
+    display: flex;
+}
+.ava {
+    width: 256px;
+    height: 256px;
+    border-radius: 360px;
+    margin-top: 10px;
+}
+.avatar {
+    display: flex;
+    flex-direction: column;
+}
+.btn_change {
+    border: none;
+    cursor: pointer;
+    color: #555;
+    margin: auto;
+    margin-top: 15px;
+    border: none;
+}
+.settings {
+    margin-left: 150px;
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+}
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile + label {
+    color: #555;
+    cursor: pointer;
+    font-family: 'Roboto', sans-serif;
+}
+.av_change {
+    margin: auto;
+    margin-top: 15px;
+}
+.set_input {
+  margin-top: 8px;
+  border-radius: 15px;
+  padding: 3px;
+  padding-left: 15px;
+  border-color: #000;
+  margin-bottom: 10px;
+  font-size: 15px;
+  height: 25px
+}
+.label_form{
+    margin-left: 15px;
+}
+.set_input:focus {
+  border: 2px solid rgb(65,0,102);
+  outline: none;
+}
+.go_back {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    color: #008cff;
+    margin-bottom: 5px;
+}
+.adblock {
+    width: 300px;
+    height: 250px;
+    margin-left: 80px;
+}
+.btn_form {
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 23px;
+    border: 2px solid #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: italic;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+.btn_form:hover{
+    box-shadow: 0 0 10px  #4723e8;
+}
+.btn_form:active {
+    border: 2px solid rgb(65,0,102);
+}
+.errors {
+  color: red;
+  padding-left: 15px;
+}
+.link {
+  text-decoration: none;
+  color: rgb(65,0,102);
+  cursor: pointer;
+}
+.link:hover {
+  border-bottom: 2px solid rgb(65, 0,102);
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 25% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  margin-top: 50px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+background: -webkit-linear-gradient(left, rgba(65,0,102,1) 46%, rgba(5,0,148,1) 100%);
+background: -o-linear-gradient(left, rgba(65,0,102,1) 46%, rgba(5,0,148,1) 100%);
+background: linear-gradient(to right, rgba(65,0,102,1) 46%, rgba(5,0,148,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#410066",endColorstr="#050094",GradientType=1);
+  color: white;
+}
+
+.modal-body {padding: 2px 35px;}
+
+.modal-footer {
+  padding: 2px 16px;
+background: rgb(162,18,18);
+background: -moz-linear-gradient(90deg, rgba(162,18,18,1) 20%, rgba(217,41,18,1) 75%);
+background: -webkit-linear-gradient(90deg, rgba(162,18,18,1) 20%, rgba(217,41,18,1) 75%);
+background: linear-gradient(90deg, rgba(162,18,18,1) 20%, rgba(217,41,18,1) 75%);
+filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#a21212",endColorstr="#d92912",GradientType=1);
+  color: white;
+  height: 2px;
+  margin-top: 23px;
+}
+
+.h5_header {
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+.preheader {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 8px;
+}
+.modal_body_warning {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 8px;
+}
+.yes {
+    margin-top: 0px;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 23px;
+    border: 2px solid #c21111;
+    font-family: 'Roboto', sans-serif;
+    font-weight: italic;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+.yes:hover{
+    box-shadow: 0 0 10px  #4723e8;
+}
+.yes:active {
+    border: 2px solid rgb(65,0,102);
+}
+.no {
+    margin-top: 0px;
+    padding: 10px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 23px;
+    border: 2px solid #033609;
+    font-family: 'Roboto', sans-serif;
+    font-weight: italic;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+    margin-left: 10px;
+}
+.no:hover{
+    box-shadow: 0 0 10px  #4723e8;
+}
+.no:active {
+    border: 2px solid rgb(65,0,102);
+}

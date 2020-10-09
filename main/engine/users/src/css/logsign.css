@@ -1,0 +1,80 @@
+body {
+    background: #f2f2f2;
+}
+main {
+    width: 82.5%;
+    margin: auto;
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.inp_form {
+    border-radius: 23px;
+    border: 2px solid #000;
+    padding-left: 15px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-top: 15px;
+}
+.inp_form:focus{
+    border: 2px solid rgb(65,0,102);
+    outline: none;
+}
+.b_form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.blk {
+    margin-top: 15px;
+}
+.link {
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: rgb(65,0,102);
+}
+.link:hover {
+    border-bottom: 2px solid rgb(65,0,102);
+}
+.chk_lb {
+    font-family: 'Roboto', sans-serif;
+    margin-left: 5px;
+}
+.chk_block {
+    margin-bottom: 15px;
+}
+.btn {
+    margin-top: 10px;
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 23px;
+    border: 2px solid #000;
+    font-family: 'Roboto', sans-serif;
+    font-weight: italic;
+    transition: 0.3s;
+    cursor: pointer;
+    outline: none;
+}
+.btn:hover{
+    box-shadow: 0 0 10px  #4723e8;
+}
+.btn:active {
+    border: 2px solid rgb(65,0,102);
+}
+.block_for {
+    margin-top: 15px;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 15px;
+}
+.block-title {
+    font-size: 45px;
+}
+.body_for {
+    color: #333;
+    font-size: 20px;
+    margin-left: 55px;
+    padding-top: 10px;
+}
